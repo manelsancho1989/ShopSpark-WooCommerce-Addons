@@ -2,7 +2,8 @@
 
 namespace ShopSpark\Woo;
 
-class Setup {
+class Setup
+{
 
     public function __construct()
     {
@@ -15,7 +16,7 @@ class Setup {
     {
         wp_enqueue_style(
             'shopspark-woo',
-            plugin_dir_url(__DIR__) . '../assets/woo.css',
+            SHOPSPARK_WOO_URL . 'assets/dist/style.css',
             [],
             '1.0'
         );
