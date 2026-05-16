@@ -1,0 +1,20 @@
+{
+  "name": "shopspark/woocommerce-addons",
+  "description": "Custom WooCommerce enhancements and features for the ShopSpark theme.",
+  "autoload": {
+    "psr-4": {
+      "Shopspark\\WoocommerceAddons\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Joan Manel Sancho Garcia"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ShopSpark\\Woo\\": "inc/"
+    }
+  },
+  "require": {}
+}
