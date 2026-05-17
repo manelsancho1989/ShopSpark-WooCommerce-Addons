@@ -16,4 +16,6 @@ define('SHOPSPARK_WOO_URL', plugin_dir_url(__FILE__));
 // Init plugin
 add_action('plugins_loaded', function () {
     new \ShopSpark\Woo\Setup();
+    new  \ShopSpark\WooCommerce\Account\Auth();
+    add_filter('woocommerce_show_page_title', '__return_false', 999);
 });

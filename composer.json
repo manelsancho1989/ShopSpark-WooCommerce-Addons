@@ -13,7 +13,9 @@
   ],
   "autoload": {
     "psr-4": {
-      "ShopSpark\\Woo\\": "inc/"
+      "ShopSpark\\Woo\\": "inc/",
+      "ShopSpark\\WooCommerce\\": "WooCommerce/",
+      "ShopSpark\\WooCommerce\\Account\\": "WooCommerce/Account/"
     }
   },
   "require": {}

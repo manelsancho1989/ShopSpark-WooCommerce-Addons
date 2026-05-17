@@ -8,7 +8,7 @@ class Setup
     public function __construct()
     {
         add_action('wp_enqueue_scripts', [$this, 'assets']);
-
+        add_filter('woocommerce_show_page_title', '__return_false');
         // aquí luego añadimos hooks WooCommerce
     }
 

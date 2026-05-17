@@ -1,6 +1,7 @@
 @use "base/buttons";
 @use "base/forms";
 @use "base/tables";
+@use "base/input";
 
 @use "components/cart";
 @use "components/mini-cart";
@@ -9,3 +10,5 @@
 @use "pages/product";
 @use "pages/checkout";
 @use "pages/account";
+
+@use "woocommerce/auth/auth";

@@ -1,0 +1,39 @@
+button {
+    width: 100%;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+
+    &.button {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border: 1px solid black;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -100%;
+            position: absolute;
+            background-color: white;
+            z-index: -1;
+            transition: left 0.1s ease;
+
+        }
+    }
+
+    &:hover {
+        &.button {
+            color: black;
+
+            &::after {
+                left: 0;
+            }
+        }
+    }
+}
