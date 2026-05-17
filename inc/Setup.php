@@ -15,10 +15,17 @@ class Setup
     public function assets()
     {
         wp_enqueue_style(
-            'shopspark-woo',
+            'shopspark-woo-css',
             SHOPSPARK_WOO_URL . 'assets/dist/style.css',
             [],
             '1.0'
+        );
+        wp_enqueue_script(
+            'shopspark-woo-js',
+            SHOPSPARK_WOO_URL . 'assets/dist/main.js',
+            [],
+            '1.0',
+            true
         );
     }
 }

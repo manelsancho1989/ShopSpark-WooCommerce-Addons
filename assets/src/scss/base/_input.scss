@@ -9,8 +9,6 @@
 
 .field {
     position: relative;
-    margin-bottom: 15px;
-
     label::before {
         content: attr(title);
         position: absolute;
